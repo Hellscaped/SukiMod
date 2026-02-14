@@ -1,0 +1,9 @@
+{
+  "variants": {
+    "facing=north": { "model": "sukimod:block/suki_plush", "uvlock": false },
+    "facing=east":  { "model": "sukimod:block/suki_plush", "y":  90, "uvlock": false },
+    "facing=south": { "model": "sukimod:block/suki_plush", "y": 180, "uvlock": false },
+    "facing=west":  { "model": "sukimod:block/suki_plush", "y": 270, "uvlock": false }
+  }
+}
+

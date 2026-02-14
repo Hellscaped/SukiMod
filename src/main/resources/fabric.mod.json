@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "sukimod",
+  "version": "${version}",
+  "name": "SukiMod",
+  "description": "suki mod. with the suki plush.",
+  "authors": [],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/sukimod/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": [
+      "dev.hellscaped.sukimod.client.SukimodDataGenerator"
+    ],
+    "client": [
+      "dev.hellscaped.sukimod.client.SukimodClient"
+    ],
+    "main": [
+      "dev.hellscaped.sukimod.Sukimod"
+    ]
+  },
+  "mixins": [
+    "sukimod.mixins.json",
+    {
+      "config": "sukimod.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}

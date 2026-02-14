@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "# ",
+        "WV"
+    ],
+    "key": {
+        "#": "minecraft:light_blue_wool",
+        "W": "minecraft:white_wool",
+        "V": "minecraft:white_dye"
+    },
+    "result": {
+        "id": "sukimod:suki_plush",
+        "count": 1
+    },
+    "group": "plush"
+}

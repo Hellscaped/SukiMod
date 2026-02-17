@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " # ",
+        "G G",
+        " G "
+    ],
+    "key": {
+        "#": "minecraft:oak_planks",
+        "G": "minecraft:glass"
+    },
+    "result": {
+        "id": "sukimod:jar",
+        "count": 1
+    }
+}

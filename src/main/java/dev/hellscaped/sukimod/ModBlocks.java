@@ -18,8 +18,14 @@ import java.util.function.Function;
 public class ModBlocks {
     public static final Block SUKI_PLUSH = register(
             "suki_plush",
-            SukiPlush::new,
-            BlockBehaviour.Properties.of().sound(SoundType.WOOL).noCollision().destroyTime(1f),
+            PlushBlock::new,
+            BlockBehaviour.Properties.of().sound(SoundType.WOOL).noOcclusion().destroyTime(1f),
+            true
+    );
+    public static final Block JAR = register(
+            "jar",
+            JarBlock::new,
+            BlockBehaviour.Properties.of().sound(SoundType.GLASS).destroyTime(0.25f).noOcclusion(),
             true
     );
     private static Block register(String name, Function<BlockBehaviour.Properties, Block> blockFactory, BlockBehaviour.Properties settings, boolean shouldRegisterItem) {
@@ -46,6 +52,7 @@ public class ModBlocks {
     public static void initialize() {
         ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.BUILDING_BLOCKS).register((itemGroup) -> {
             itemGroup.accept(ModBlocks.SUKI_PLUSH.asItem());
-        });
+            itemGroup.accept(ModBlocks.JAR.asItem());
+        });;
     }
 }

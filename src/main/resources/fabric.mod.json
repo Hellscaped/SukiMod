@@ -4,7 +4,7 @@
   "version": "${version}",
   "name": "SukiMod",
   "description": "suki mod. with the suki plush.",
-  "authors": [],
+  "authors": ["Hellscaped <3"],
   "contact": {},
   "license": "MIT",
   "icon": "assets/sukimod/icon.png",
